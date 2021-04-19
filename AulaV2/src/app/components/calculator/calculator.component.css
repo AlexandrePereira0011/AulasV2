@@ -1,0 +1,89 @@
+
+table {
+    background: linear-gradient(to top left ,#000000,#000000, #101010,#101010);
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 28px;
+    padding-right: 0px;
+    border-radius: 4%;
+    overflow-x: auto;
+    border:2px solid #343134;
+    border:none;
+}
+
+.botao{
+    color:white;
+    font-family: 'Arimo', sans-serif;
+    font-size: 17px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+}
+
+.botao-duplo{
+    color:white;
+    font-family: 'Arimo', sans-serif;
+    font-size: 17px;
+    width: 114px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 25px 25px;
+    border:none;
+    outline: none;
+}
+
+.laranja{
+    background-color:#f1912a;
+}
+
+.cinzento{
+    background-color: #a4a4a4;
+    color: black;
+    font-weight:500;
+}
+
+.cinzento-escuro{
+    background-color: #343134;
+}
+
+.tela{ 
+    width:200px;
+    height: 35px;
+    margin: 30px;
+    font-size: 25px;
+    padding: 30px;
+    font-family: 'Arimo', sans-serif;
+    color: white;
+}
+
+.meio {
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.cinzento-escuro:active,.botao-duplo:active {
+    color: black;
+    -webkit-box-shadow: inset 0px 0px 5px white;
+       -moz-box-shadow: inset 0px 0px 5px white;
+            box-shadow: inset 0px 0px 5px white;
+     outline: none;
+}
+
+.cinzento:active{
+    color: white;
+    -webkit-box-shadow: inset 0px 0px 6px black;
+       -moz-box-shadow: inset 0px 0px 6px black;
+            box-shadow: inset 0px 0px 6px black;
+     outline: none;
+}
+
+.laranja:active{
+    color: black;
+    -webkit-box-shadow: inset 0px 0px 6px black;
+       -moz-box-shadow: inset 0px 0px 6px black;
+            box-shadow: inset 0px 0px 6px black;
+     outline: none;
+}
