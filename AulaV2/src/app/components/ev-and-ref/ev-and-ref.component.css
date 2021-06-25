@@ -1,0 +1,45 @@
+.input{
+    display: block;
+    margin-top: 5vh;
+    margin-left:5vw;
+}
+
+.centrar{
+    margin-left:35vw;
+    margin-top: 3vh;
+}
+
+.rodar {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.mudarCor{
+    animation:changeBackgroundColor 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes changeBackgroundColor {
+    0% {
+         background-color: green;
+        }
+    20% {
+        background-color: #2e81eb;
+        }
+    40% {
+       background-color: #f78e21;
+        }
+    60% {
+        background-color: red;
+        }
+    80% {
+        background-color: rgb(49, 0, 128);
+        }
+    100% {
+        background-color: #001F3F;
+        }
+  }

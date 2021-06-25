@@ -6,13 +6,31 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
+import { ClinicaVeterinariaComponent } from './components/clinica-veterinaria/clinica-veterinaria.component';
+import { FourOFourComponent } from './components/four-ofour/four-ofour.component';
+import { ListaDeComprasComponent } from './components/lista-de-compras/lista-de-compras.component';
+import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
+import { AddComponent } from './components/lista-de-compras/add/add.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
+import { PColorComponent } from './components/p-color/p-color.component';
+import { ChuckComponent } from './components/chuck/chuck.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    EvAndRefComponent,
+    ClinicaVeterinariaComponent,
+    FourOFourComponent,
+    ListaDeComprasComponent,
+    BuyComponent,
+    AddComponent,
+    CookiesComponent,
+    PColorComponent,
+    ChuckComponent
   ],
   imports: [
     BrowserModule,

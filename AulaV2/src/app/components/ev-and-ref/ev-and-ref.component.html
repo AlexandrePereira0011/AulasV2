@@ -1,0 +1,7 @@
+<div class="centrar"> 
+    <button class="botao" (click)='rodar(ref)'>Rodar</button>
+    <button class="botao" id="botao2" (click)='cores(ref)'>Mudar Cor</button>
+    <button class="botao" (click)='desformar(ref)' id="btn">Desformar</button>
+    <input type="text" id="input" class="input" [style.background]="cor" (mouseenter)='changecolor("red")' (focus)='changecolor("pink")' (blur)='changecolor("grey")' 
+    (input)='changecolor("green")' (copy)='changecolor("yellow")' #ref>
+</div>
