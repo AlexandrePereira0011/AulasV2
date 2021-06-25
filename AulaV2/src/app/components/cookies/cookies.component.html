@@ -1,4 +1,4 @@
-<div class="caixa animacaoSubir" *ngIf="!aceiteiCookie" #refCaixa>
-  <h4>As cookies deste web site são utilizadas para a personalização de conteúdos, assim como para oferecer funcionalidades e análise de tráfego. </h4>
-  <button class="botao" (click)="aceitarCookies(refCaixa)">Aceitar</button>
+<div class="cookie animacaoSubir" *ngIf="!aceiteiCookie" #refCaixa>
+  <h4>Este website utiliza cookies para melhorar a experiencia do utilizador. </h4>
+  <button class="btn btn-primary" (click)="aceitarCookies(refCaixa)">Aceitar</button>
 </div>

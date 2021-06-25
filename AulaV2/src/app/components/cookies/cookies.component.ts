@@ -18,9 +18,7 @@ export class CookiesComponent implements OnInit {
   aceitarCookies(refCaixa:HTMLElement)
   {
     localStorage.setItem("cookie","1");
-    refCaixa.classList.remove("animacaoSubir");
-    refCaixa.classList.add("animacaoDescer");
-    setTimeout(function(){  refCaixa.style.display ="none"; }, 500);
+  refCaixa.style.display ="none"; 
 
   }
 

@@ -18,9 +18,7 @@ export class BuyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Comprar(artigo : Artigo, icon){
-    icon.style.color="grey";
-    setTimeout(function(){icon.style.color="white";},80);
+  Comprar(artigo : Artigo){
     artigo.carrinho = true;
     console.log("Artigo", artigo)
   }

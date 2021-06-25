@@ -1,5 +1,5 @@
 
-    <table class="table table-hover table-md white" style="color: white; font-size: 14px;">
+    <table class="table table-dark" >
       <thead>
         <tr>
           <th scope="col">Nome</th>
@@ -11,7 +11,7 @@
       <tr *ngFor="let item of listaService.listaCompras">
         <td class="m-5" [ngClass]="{'comprados' : item.carrinho}">{{item.nome}}</td>
         <td class="m-5" [ngClass]="{'comprados' : item.carrinho}">{{item.preco}}€</td>
-        <td><i #icon class="fa fa-shopping-cart white" style="font-size: 24px;" (click)="Comprar(item, icon)"></i></td>
+        <td> <p (click)="Comprar(item)"> Comprar</p></td>
       </tr>
     </tbody>
     </table>

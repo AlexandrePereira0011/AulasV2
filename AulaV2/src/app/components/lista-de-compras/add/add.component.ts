@@ -19,23 +19,20 @@ export class AddComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  AdicionarLista(nome, preco, erro_prod, erro_preco){
-    if (nome.length <= 0 && preco.length <= 0 ){
-      alert("Erro: Insira o nome e o preço do produto!");
-      erro_prod.style.display="block";
-      erro_preco.style.display="block";
-    }else if (nome.length <= 0 ){
-      alert("Erro: Insira o nome do produto!");
-      erro_preco.style.display="none";
-      erro_prod.style.display="block";
+  Add(produto, preco, msgerro1, msgerro2){
+    if (produto.length <= 0 && preco.length <= 0 ){
+      msgerro1.style.display="block";
+      msgerro2.style.display="block";
+    }else if (produto.length <= 0 ){
+      msgerro1.style.display="none";
+      msgerro2.style.display="block";
     }else if(preco.length <= 0 ){
-      erro_prod.style.display="none";
-      alert("Erro: Insira o preço do produto!");
-      erro_preco.style.display="block";
+      msgerro1.style.display="none";
+      msgerro2.style.display="block";
       }else{
-        erro_prod.style.display="none";
-        erro_preco.style.display="none";
-        this.listaService.listaCompras.push(new Artigo(nome, preco));
+        msgerro1.style.display="none";
+        msgerro2.style.display="none";
+        this.listaService.listaCompras.push(new Artigo(produto, preco));
         }
 
   }

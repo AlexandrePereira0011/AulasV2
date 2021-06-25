@@ -1,44 +1,20 @@
-.caixa{
+.cookie{
   bottom: 0%;
-  height: 9vh;
+  height: 7vh;
   width: 100%;
   position: fixed;
-  background-color: #30386a;
+  background-color: orange;
   color:white;
   display: flex;
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-}
-
-.animacaoSubir{
-  animation: animacaoCookiesSubir;
-  animation-duration: 1s;
-}
-.animacaoDescer{
-  animation: animacaoCookiesDescer;
+   animation: animacaoSubir;
   animation-duration: 1s;
 }
 
-.botao{
-  border-radius: 8px;
-  background-color: #1C2428 ;
-  color:white;
-  height: 30px;
-  padding:10px;
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 18px;
-  box-shadow: 2px 2px 2px black;
-  outline: none;
-}
 
-@keyframes animacaoCookiesSubir{
+@keyframes animacaoSubir{
 from{bottom: -25vh;}
 to{ bottom: 0%;}
 }
-
-@keyframes animacaoCookiesDescer{
-  from{bottom: 0%;}
-  to{ bottom: -25vh;}
- }
