@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ListaService } from 'src/app/services/lista.service';
+import {Artigo} from '../../../class/artigo';
 
 @Component({
   selector: 'app-buy',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuyComponent implements OnInit {
 
-  constructor() { }
+  listaService : ListaService;
+
+  constructor(lista : ListaService) {
+    this.listaService = lista;
+  }
 
   ngOnInit(): void {
   }
+
+  Comprar(artigo : Artigo, icon){
+    icon.style.color="grey";
+    setTimeout(function(){icon.style.color="white";},80);
+    artigo.carrinho = true;
+    console.log("Artigo", artigo)
+  }
+
 
 }

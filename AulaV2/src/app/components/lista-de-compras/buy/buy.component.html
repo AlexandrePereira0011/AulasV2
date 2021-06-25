@@ -1,1 +1,17 @@
-<p>buy works!</p>
+
+    <table class="table table-hover table-md white" style="color: white; font-size: 14px;">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Preço</th>
+          <th scope="col">Comprar</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of listaService.listaCompras">
+        <td class="m-5" [ngClass]="{'comprados' : item.carrinho}">{{item.nome}}</td>
+        <td class="m-5" [ngClass]="{'comprados' : item.carrinho}">{{item.preco}}€</td>
+        <td><i #icon class="fa fa-shopping-cart white" style="font-size: 24px;" (click)="Comprar(item, icon)"></i></td>
+      </tr>
+    </tbody>
+    </table>

@@ -1,1 +1,26 @@
-<p>add works!</p>
+
+<br><br>
+<div class="form-group col-md-6">
+  <input type="text" class="form-control"  #nome placeholder="Nome do produto"  style="width: 70%;">
+  <p style="display: none; color:white" #erro_prod class="form-text text-muted">ERR0: Insira o nome do produto</p>
+</div>
+<div class="form-group col-md-6">
+  <input type="number" class="form-control" #preco placeholder="Preço"  style="width: 70%;">
+  <p style="display: none;color:white" #erro_preco class="form-text text-muted">ERR0: Insira o preço do produto</p>
+</div>
+<button type="submit" class="btn btn-primary" (click)="AdicionarLista(nome.value, preco.value, erro_prod, erro_preco)">Adicionar</button>
+<br><br>
+<table class="table table-hover table-md white" style="font-size: 14px;">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Preço</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let artigo of listaService.listaCompras">
+    <td class="m-5" [ngClass]="{'comprados' : artigo.carrinho}">{{artigo.nome}}</td>
+    <td class="m-5" [ngClass]="{'comprados' : artigo.carrinho}">{{artigo.preco}}€</td>
+  </tr>
+</tbody>
+</table>
